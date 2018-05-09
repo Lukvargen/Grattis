@@ -21,14 +21,11 @@ function setup() {
 	var baseColor = color(200, 50, 50);
 	
 
-	points = font.textToPoints('Grattis!', windowWidth / 2.5, windowHeight/2, windowWidth / 15 );
+	points = font.textToPoints('Grattis!', windowWidth / 2 - 250, windowHeight/2, 128, {
+		sampleFactor: 0.1,
+	} );
 	totalPoints = points.length;
 
-	
-	for (let i = 0; i < points.length; i++) {
-		const pt = points[i];
-		
-	}
 
 	canon = new Canon(windowWidth/2, windowHeight-100);
 
